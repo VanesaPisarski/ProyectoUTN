@@ -9,7 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\ComprarProducto\" />
+    <ProjectReference Include="..\ProyectoUTN.domain\ProyectoUTN.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

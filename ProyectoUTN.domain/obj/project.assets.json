@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\trabajo\\Proyecto UTN\\ProyectoUTN\\ProyectoUTN.domain\\ProyectoUTN.domain.csproj",
-      "projectName": "ProyectoUTN.domain",
-      "projectPath": "D:\\trabajo\\Proyecto UTN\\ProyectoUTN\\ProyectoUTN.domain\\ProyectoUTN.domain.csproj",
+      "projectUniqueName": "D:\\trabajo\\Proyecto UTN\\ProyectoUTN\\ProyectoUTN.domain\\ProyectoUTN.Domain.csproj",
+      "projectName": "ProyectoUTN.Domain",
+      "projectPath": "D:\\trabajo\\Proyecto UTN\\ProyectoUTN\\ProyectoUTN.domain\\ProyectoUTN.Domain.csproj",
       "packagesPath": "C:\\Users\\Vanesa\\.nuget\\packages\\",
       "outputPath": "D:\\trabajo\\Proyecto UTN\\ProyectoUTN\\ProyectoUTN.domain\\obj\\",
       "projectStyle": "PackageReference",

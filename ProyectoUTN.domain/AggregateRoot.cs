@@ -1,34 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
+using ProyectoUTN.Domain.Productos.Producto;
 
 namespace VinylProcess.Domain
 {
-    public abstract class AggregateRoot<T> : Entity<T>, IAggregateRoot
+    public abstract class AggregateRoot<T> : Entity<T> //IAggregateRoot
     {
-        private List<IDomainEvent> _domainEvents = new List<IDomainEvent>();
 
-        public List<IDomainEvent> DomainEvents => _domainEvents;
+        private Producto producto { get; set; }
 
-        public void AddDomainEvent(IDomainEvent domainEvent)
-        {
-            // Add the domain event to this aggregate's list of domain events
-            this._domainEvents.Add(domainEvent);
+        private int cantidad { get; set; }
 
-            // Log the domain event
-            this.LogDomainEventAdded(domainEvent);
-        }
+        Guid Id { get; set; }
 
-        public void ClearEvents()
-        {
-            this._domainEvents.Clear();
-        }
 
-        private void LogDomainEventAdded(IDomainEvent domainEvent)
-        {
-            Type thisClass = this.GetType();
-            Type domainEventClass = domainEvent.GetType();
-            System.Console.Out.WriteLine($"[Domain Event Created]:{thisClass.FullName}==>{domainEventClass.FullName}");
-        }
+
+
+
+
+
+        /*       private List<IDomainEvent> _domainEvents = new List<IDomainEvent>();
+
+               public List<IDomainEvent> DomainEvents => _domainEvents;
+
+               public void AddDomainEvent(IDomainEvent domainEvent)
+               {
+                   // Add the domain event to this aggregate's list of domain events
+                   this._domainEvents.Add(domainEvent);
+
+                   // Log the domain event
+                   this.LogDomainEventAdded(domainEvent);
+               }
+
+               public void ClearEvents()
+               {
+                   this._domainEvents.Clear();
+               }
+
+               private void LogDomainEventAdded(IDomainEvent domainEvent)
+               {
+                   Type thisClass = this.GetType();
+                   Type domainEventClass = domainEvent.GetType();
+                   System.Console.Out.WriteLine($"[Domain Event Created]:{thisClass.FullName}==>{domainEventClass.FullName}");
+               } */
 
     }
 }
